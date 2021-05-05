@@ -79,6 +79,7 @@ def send():
 
         res = chatbot_response(msg)
         ChatLog.insert(END, "Bot: " + res + '\n\n')
+        ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
 
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
@@ -86,16 +87,16 @@ def send():
 
 base = Tk()
 base.title("BuddyBot")
-base.geometry("1080x720")
+base.geometry("1080x700")
 base.resizable(width="1000", height="700")
 
 #Create Chat window
-ChatLog = Text(base, bd=0, bg="yellow", height="1000", width="700", font="Arial",)
+ChatLog = Text(base, bd=0, bg="lightblue", height="1000", width="700", font="Arial",)
 
 ChatLog.config(state=DISABLED)
 
 #Bind scrollbar to Chat window
-scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
+scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="arrow")
 ChatLog['yscrollcommand'] = scrollbar.set
 
 #Create Button to send message
@@ -104,14 +105,14 @@ SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width="12", h
                     command= send )
 
 #Create the box to enter message
-EntryBox = Text(base, bd=0, bg="white",width="50", height="5", font="Arial")
+EntryBox = Text(base, bd=0, bg="lightgrey",width="200", height="5", font="Arial")
 #EntryBox.bind("<Return>", send)
 
 
 #Place all components on the screen
-scrollbar.place(x=1000,y=6, height=700)
-ChatLog.place(x=6,y=6, height=600, width=1000)
-EntryBox.place(x=128, y=535, height=90, width=265)
-SendButton.place(x=6, y=535, height=90)
+scrollbar.place(x=1060,y=6, height=700)
+ChatLog.place(x=270,y=6, height=600, width=800)
+EntryBox.place(x=270, y=610, height=40, width=650)
+SendButton.place(x=923, y=610, height=40)
 
 base.mainloop()
