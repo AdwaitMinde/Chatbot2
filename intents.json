@@ -19,55 +19,60 @@
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
          "context": [""]
         },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+        {"tag": "joke",
+         "patterns": ["Can you tell me a joke"],
+         "responses": [""],
          "context": [""]
         },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module"],
+        {"tag": "good",
+         "patterns": ["Im feeling good","Im okay","I had a good day","" ],
+         "responses": ["Good to hear",""],
+         "context": ["positive emotion "]
+        },
+        
+        {"tag": "hospital",
+         "patterns": ["Should I visit any hospital","Should I consult any doctor","Can you recommend me any doctor"],
+         "responses": ["Buddy considering present scenario I wont recommend to vist a doctor if its not complicated try exercising and keep a tab on my suggestions you should be fine","Dr.XYZ is very famous for handling mental illness","I will give you some links of some famous blogs of great doctors hope it wil help"],
          "context": [""]
         },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Navigating to Blood Pressure module"],
+        {"tag": "solution",
+         "patterns": ["Do you have any solution for my problem","What should I do?","Please suggest me something"],
+         "responses": ["Buddy Keep yourself distracted from problems","If possible, do your best to distract yourself from overthinking. Read a book or go for a walk or finish a puzzle.","Find ways to engage yourself","Try watching some standups will be helpful","Depression can be well managed and there can be wonderful life beyond depression"],
          "context": [""]
         },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
-        },
-        {"tag": "search_blood_pressure_by_patient_id",
-         "patterns": [],
-         "responses": ["Loading Blood pressure result for Patient"],
-         "context": [""]
-        },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
+        {"tag": "medicine",
+         "patterns": ["Do you recommend me any medication for me","Will so and so medicine really help me?"],
+         "responses": ["Friend try not to take any medicines it may give you temporary relief but wont last long","Dont just rely on medicines","Maybe so and so medicine should give you some relief but dont rely on it permanently"],
          "context": ["search_pharmacy_by_name"]
         },
-        {"tag": "search_pharmacy_by_name",
-         "patterns": [],
-         "responses": ["Loading pharmacy details"],
+        {"tag": "mental illness",
+         "patterns": ["i feel like having mental breakdown","My mental state is not good","Im having suicidal tendencies"],
+         "responses": ["Buddy dont speak like that","Cheer up friend","Everything will be alright"],
          "context": [""]
         },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
-        },
-        {"tag": "search_hospital_by_params",
-         "patterns": [],
-         "responses": ["Please provide hospital type"],
-         "context": ["search_hospital_by_type"]
-        },
-        {"tag": "search_hospital_by_type",
-         "patterns": [],
-         "responses": ["Loading hospital details"],
+        {"tag": "books",
+         "patterns": ["How can I improve my mood?","Can you recommend me any book"],
+         "responses": ["I recommend you to read the book 'The 7 Habits of Highly Effective people' by Stephen R. Convey"],
          "context": [""]
+        },
+        {"tag": "feeling",
+         "patterns": ["Im not feeling good","Im upset","Im feeling lonely","I think Im having a bad day","Please help me not feeling well","Im feeling sad"],
+         "responses": ["I wish I had arms so I could hug you","Iam sorry to hear that, I hope you feel better","Its such a good day why are you upset","Buddy cheer up , in this world there is no problem without solution , just say the problem and we can deal with it together.","Being upset will not solve any problem but getting up and set your way to your goals will...","Don’t feel sad"],
+         "context": ["negative emotion level 1"]
+        },
+        {"tag": "weather",
+         "patterns": ["How is the weather?", "Is it sunny?", "Is it raining?","Is it cold?"],
+         "responses": ["Sorry dont know but Im sure its a beautiful weather"],
+         "context": [""]
+        },
+        {"tag": "advice",
+        "patterns": ["What advice do you have for me?","Any advice?",""],
+        "responses": ["Talking with your friends and family can have a huge positive effect on your mood ",""],
+        "context": [""]
         }
+       
+
+
+        
    ]
 }
