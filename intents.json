@@ -1,12 +1,12 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Yo", "What's up", "Wassup","Hey there"],
+         "responses": ["Hello", "Good to see you here", "Hi there, how can I help?"],
          "context": [""]
         },
         {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "patterns": ["Bye", "See you later", "Goodbye", "bye" ,"See ya"],
+         "responses": ["See you later!","Take care", "Have a nice day!!","Bye you know where to find me", "Till next time", "Bye! Come back again soon."],
          "context": [""]
         },
         {"tag": "thanks",
@@ -21,12 +21,12 @@
         },
         {"tag": "joke",
          "patterns": ["Can you tell me a joke"],
-         "responses": [""],
+         "responses": ["Why doesn't the sun go to college? \nBecause it has a million degrees!","What did one traffic light say to the other? \nStop looking at me, I'm changing!","Have you ever tried eating a clock? \nIt's really time-consuming, especially if you go for seconds.","What is sticky and brown? \nA stick!","Why did the gym close down? \nIt just didn't work out!"],
          "context": [""]
         },
         {"tag": "good",
-         "patterns": ["Im feeling good","Im okay","I had a good day","" ],
-         "responses": ["Good to hear",""],
+         "patterns": ["I am feeling good","Im okay","I had a good day","Awesome" ],
+         "responses": ["Good to hear, what else you got?","Great!! Tell me more."],
          "context": ["positive emotion "]
         },
         
@@ -42,7 +42,7 @@
         },
         {"tag": "medicine",
          "patterns": ["Do you recommend me any medication for me","Will so and so medicine really help me?"],
-         "responses": ["Friend try not to take any medicines it may give you temporary relief but wont last long","Dont just rely on medicines","Maybe so and so medicine should give you some relief but dont rely on it permanently"],
+         "responses": ["I cannot recommend any medication, but if you feel you need them you should meet a doctor"],
          "context": ["search_pharmacy_by_name"]
         },
         {"tag": "mental illness",
@@ -56,18 +56,33 @@
          "context": [""]
         },
         {"tag": "feeling",
-         "patterns": ["Im not feeling good","Im upset","Im feeling lonely","I think Im having a bad day","Please help me not feeling well","Im feeling sad"],
-         "responses": ["I wish I had arms so I could hug you","Iam sorry to hear that, I hope you feel better","Its such a good day why are you upset","Buddy cheer up , in this world there is no problem without solution , just say the problem and we can deal with it together.","Being upset will not solve any problem but getting up and set your way to your goals will...","Don’t feel sad"],
+         "patterns": ["I am not feeling good","I am upset","I am feeling lonely","I think I am having a bad day","Please help me not feeling well","Im feeling sad"],
+         "responses": ["I wish I had arms so I could hug you","Iam sorry to hear that, I hope you feel better","Its such a good day,why are you upset?","Buddy cheer up , in this world there is no problem without solution , just say the problem and we can deal with it together.","Being upset will not solve any problem but getting up and set your way to your goals will...","Don’t feel sad,tell me about it."],
          "context": ["negative emotion level 1"]
+        },
+        {"tag": "hit,beat",
+        "patterns": ["I was beaten.","I was hit","I am hurt", "I am in a lot of pain."],
+        "responses": ["Try approaching a person you trust, if the injury is severe \napproach the correct autorities"],
+        "context": [""]
+        },
+        {"tag": "suicide",
+        "patterns": ["I think i can't take it anymore","I feel like commiting suicide","I want to kill myself"],
+        "responses": ["If you hold a glass of water for sometime it doesn’t matter much \nbut when the same glass of water is being holded for whole day \nthe hand starts to pain.\nThe pain is just what you are going through now. Just put the glass down.\nThink about something you have always loved to do\nI highly recommend that you call iCall at 091 529 87821 \nor visit www.icallhelpline.org.","I highly recommend that you call iCall at 091 529 87821 \nor visit www.icallhelpline.org.\nI know you will make the right choice, I Believe in you.","There are still people who love you and care about you, maybe you have forgotten them or just haven't met them yet.\nTry thinking about them.I highly recommend that you call iCall at 091 529 87821 \nor visit www.icallhelpline.org."],
+        "context": [""]
         },
         {"tag": "weather",
          "patterns": ["How is the weather?", "Is it sunny?", "Is it raining?","Is it cold?"],
-         "responses": ["Sorry dont know but Im sure its a beautiful weather"],
+         "responses": ["Sorry I dont know, but I am sure it's a beautiful weather outside."],
+         "context": [""]
+        },
+        {"tag": "bully",
+         "patterns": ["I was bullied", "There is a bully at school", "He bullies me","She bullies me"],
+         "responses": ["You need to stay strong. Tell your parents or teachers in-charge.\nThey will definitely help you."],
          "context": [""]
         },
         {"tag": "advice",
         "patterns": ["What advice do you have for me?","Any advice?",""],
-        "responses": ["Talking with your friends and family can have a huge positive effect on your mood ",""],
+        "responses": ["Talking with your friends and family can have a huge positive effect on your mood.",""],
         "context": [""]
         }
        
