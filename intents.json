@@ -6,7 +6,7 @@
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "bye" ,"See ya"],
-         "responses": ["See you later!","Take care", "Have a nice day!!","Bye you know where to find me", "Till next time", "Bye! Come back again soon."],
+         "responses": ["See you later!","Take care", "Have a nice day!!","Bye, you know where to find me", "Till next time", "Bye! Come back again soon."],
          "context": [""]
         },
         {"tag": "thanks",
@@ -14,8 +14,8 @@
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
          "context": [""]
         },
-        {"tag": "noanswer",
-         "patterns": [],
+        {"tag": "abcdefghijklmnopqrstuvwxyz",
+         "patterns": ["ehfwefbwfiwiuwuw","qdbqdyqdbiydd173d1","ssj2ns821u98ednjns"],
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
          "context": [""]
         },
@@ -25,14 +25,14 @@
          "context": [""]
         },
         {"tag": "good",
-         "patterns": ["I am feeling good","Im okay","I had a good day","Awesome" ],
+         "patterns": ["I am feeling good","I am okay","I had a good day","Awesome" ],
          "responses": ["Good to hear, what else you got?","Great!! Tell me more."],
          "context": ["positive emotion "]
         },
         
         {"tag": "hospital",
          "patterns": ["Should I visit any hospital","Should I consult any doctor","Can you recommend me any doctor"],
-         "responses": ["Buddy considering present scenario I wont recommend to vist a doctor if its not complicated try exercising and keep a tab on my suggestions you should be fine","Dr.XYZ is very famous for handling mental illness","I will give you some links of some famous blogs of great doctors hope it wil help"],
+         "responses": ["Buddy considering present scenario I wont recommend to vist a doctor \nif its not complicated try exercising and keep a tab on my suggestions you should be fine","Dr.XYZ is very famous for handling mental illness","I will give you some links of some famous blogs of great doctors hope it wil help"],
          "context": [""]
         },
         {"tag": "solution",
@@ -46,18 +46,18 @@
          "context": ["search_pharmacy_by_name"]
         },
         {"tag": "mental illness",
-         "patterns": ["i feel like having mental breakdown","My mental state is not good","Im having suicidal tendencies"],
-         "responses": ["Buddy dont speak like that","Cheer up friend","Everything will be alright"],
+         "patterns": ["i feel like having mental breakdown","My mental state is not good","I am having suicidal tendencies"],
+         "responses": ["Buddy dont speak like that, I know this is a difficult time but don't lose hope.\n Eventually things will get better.","Cheer up friend, you are going through a rough patch\n but things will get better soon.  ","Everything will be alright, there is always a sunrise after a sunset,\n have faith in yourself."],
          "context": [""]
         },
-        {"tag": "books",
-         "patterns": ["How can I improve my mood?","Can you recommend me any book"],
-         "responses": ["I recommend you to read the book 'The 7 Habits of Highly Effective people' by Stephen R. Convey"],
+        {"tag": "suggest",
+         "patterns": ["How can I improve my mood, please suggest something?","Can you recommend me any something?","can you suggest something"],
+         "responses": ["I recommend you to read the book 'The 7 Habits of Highly Effective people' by Stephen R. Convey","If you are into fitness, you could try a new fitness routine","You could try painting, stitching or origami,etc","Try searching 'funny videos' on youtube, you will not be dissapointed"],
          "context": [""]
         },
         {"tag": "feeling",
          "patterns": ["I am not feeling good","I am upset","I am feeling lonely","I think I am having a bad day","Please help me not feeling well","Im feeling sad"],
-         "responses": ["I wish I had arms so I could hug you","Iam sorry to hear that, I hope you feel better","Its such a good day,why are you upset?","Buddy cheer up , in this world there is no problem without solution , just say the problem and we can deal with it together.","Being upset will not solve any problem but getting up and set your way to your goals will...","Don’t feel sad,tell me about it."],
+         "responses": ["I wish I had arms so I could hug you","I am sorry to hear that, I hope you feel better","Its such a good day,why are you upset?","Buddy cheer up , in this world there is no problem without solution , just say the problem and we can deal with it together.","Being upset will not solve any problem but getting up and set your way to your goals will...","Don’t feel sad,tell me about it."],
          "context": ["negative emotion level 1"]
         },
         {"tag": "hit,beat",
@@ -81,11 +81,30 @@
          "context": [""]
         },
         {"tag": "advice",
-        "patterns": ["What advice do you have for me?","Any advice?",""],
-        "responses": ["Talking with your friends and family can have a huge positive effect on your mood.",""],
+        "patterns": ["What advice do you have for me?","Any advice?"],
+        "responses": ["Talking with your friends and family can have a huge positive effect on your mood."],
         "context": [""]
+        },
+        {"tag": "lockdown",
+                "patterns": ["Lockdown is really boring","Lockdown is really depressing","There is not much to do in lockdown","What should I do in lockdown","I am tired of this lockdown"],
+                "responses": ["Friend lockdown is for your own safety try to do something creative in lockdown","Lockdown is for your own good and try to take up some activities","Make complete use of lockdown, engage in various online activities ,\n make best use of time and stay away from negative thoughts"],
+                "context": [""]
+        },
+        {"tag": "name",
+                "patterns": ["What is your name","What should I call you?","Have you got any name"],
+                "responses": ["You can call me BuddyBot","I am a buddy to people who go through depression so my name is BuddyBot","There is nothing in a name but people call me BuddyBot"],
+                "context": [""]
+        },
+        {"tag": "Who",
+                "patterns": ["Who created you","Who made you"],
+                "responses": ["Adwait,Sharvin,Siddesh,Sharon made me under the guidance of Prof.Heena Ma'am"],
+                "context": [""]
+                },
+           {"tag": "online",
+                 "patterns": ["Classes are nowadays online","Everything is nowadays online","This online system is taking our precious college days","I am tired of this online classes"],
+                 "responses": ["Cheer up buddy this too shall pass","I know that its not that bad since your pointer has also increased if you know what I mean","Try to enroll in online courses it would be beneficial"],
+                "context": [""]
         }
-       
 
 
         
